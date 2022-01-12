@@ -5,7 +5,7 @@ This password generator dispays to the user with the option to generate a secure
 
 Live application: 
 
-Password Generator Repository: 
+Password Generator Repository: https://github.com/RobertKelly03/Password-Generator-Homework
 
 
 
