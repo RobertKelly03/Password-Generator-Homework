@@ -1,3 +1,5 @@
+
+
 *,
 *::before,
 *::after {
@@ -6,32 +8,32 @@
 
 html,
 body,
-.wrapper {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
 
+
+/* Main background color and font family */
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: #1e76ce;
 }
-
+/* This is the styling for the area around the main cards in the password generator */
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-
+/* This is the main in page title and its styling*/
 header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: hsl(207, 21%, 8%);
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 72%, 68%);
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
@@ -62,7 +64,7 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: #133352;
   height: 2px;
 }
 
@@ -72,13 +74,13 @@ header {
   clear: both;
 }
 
+/* The Generate Password button */
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
-  color: hsl(0, 0%, 100%);
+  box-shadow: none;
+  color: hsl(0, 0%, 0%);
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
@@ -88,14 +90,6 @@ header {
   cursor: pointer;
 }
 
-button[disabled] {
-  cursor: default;
-  background: #c0c7cf;
-}
-
-.float-right {
-  float: right;
-}
 
 #password {
   -webkit-appearance: none;
@@ -116,6 +110,44 @@ button[disabled] {
   border-radius: 6px;
   resize: none;
   overflow: hidden;
+}
+
+
+.formheader {
+  color: hsl(206, 17%, 28%);
+}
+/* form where you decide on the amount of characters you want in your password*/
+form input {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: fit-content;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color:hsl(0, 0%, 0%);
+  font-size: 16px;
+}
+.charform {
+  width: 45%;
+  margin: auto;
+  text-align: center;
+  background-color: hsl(0, 72%, 68%);
+  border-radius: 5px;
+  border-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  color: hsl(206, 17%, 28%);
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px 40px;
+  margin-bottom: 4%;
+}
+
+input[type="number"] {
+  width: 80px;
+  height: 30px;
+  color: black;
 }
 
 @media (max-width: 690px) {

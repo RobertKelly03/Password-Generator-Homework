@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Password Generator</title>
+    <title>Robert Kelly's Password Generator</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -12,15 +12,36 @@
       <header>
         <h1>Password Generator</h1>
       </header>
+      <div class="charform">
+        <!-- form acton post changes the inserted data on the page -->
+        <form action="POST">
+          <!-- each label is an opiton to select/ include certian types of characters -->
+          <header class="formheader">
+            Select desired characters
+          </header>
+          <label for="lowercase">Lowercase</label>
+          <input type='checkbox' name="lowercase" id="lowercase">
+          <br>
+          <label for="numbers">Numbers</label>
+          <input type='checkbox' name="numbers" id="numbers">
+          <br>
+          <label for="uppercase">Uppercase</label>
+          <input type='checkbox' name="uppercase" id="uppercase">
+          <br>
+          <label for="specials">Special</label>
+          <input type='checkbox' name="specials" id="specials">
+          <br>
+          <label for="length">Your passwords length (8-128 characters)</label>
+          <input type="number" name="length" id="length" minlength="8" maxlength="128">
+
+        </form>
+      </div>
       <div class="card">
-        <div class="card-header">
-          <h2>Generate a Password</h2>
-        </div>
         <div class="card-body">
           <textarea
             readonly
             id="password"
-            placeholder="Your Secure Password"
+            placeholder="Password Will Appear Here"
             aria-label="Generated Password"
           ></textarea>
         </div>
